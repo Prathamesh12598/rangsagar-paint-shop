@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Rangsagar Paints</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="RangSagar Logo" class="logo">
+    <h1>RangSagar Paints</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Admin Login</h2>
+    <form id="loginForm" class="form-box">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage" style="color:red;"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rangsagar Paints</p>
+  </footer>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      let u = document.getElementById("username").value;
+      let p = document.getElementById("password").value;
+      if(u === "SagarM" && p === "Pooj@$ag@r"){
+        window.location.href = "admin.html";
+      } else {
+        document.getElementById("loginMessage").innerText = "Please enter valid details";
+      }
+    });
+  </script>
+</body>
+</html>

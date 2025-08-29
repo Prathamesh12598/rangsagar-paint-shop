@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Rangsagar Paints</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rangsagar Logo" class="logo">
+    <h1>Rangsagar Paints</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Admin Panel</h2>
+    <form id="product-form" class="form-box">
+      <label>Product Name</label>
+      <input type="text" id="name" required>
+
+      <label>Price</label>
+      <input type="text" id="price" required>
+
+      <label>Product Image</label>
+      <input type="file" id="imageFile" accept="image/*" required>
+
+      <button type="submit">Add Product</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rangsagar Paints</p>
+  </footer>
+</body>
+</html>
