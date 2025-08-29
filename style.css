@@ -218,7 +218,7 @@ footer {
 }
 
 .hero-overlay {
-  background: url("images/logo.png") center center no-repeat;
+  background: url("logo.png") center center no-repeat;
   background-size: 250px;
   opacity: 0.15;   /* subtle watermark */
   position: absolute;
